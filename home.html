@@ -1,7 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
     <head>
+        <!--Yvonne Flores-Garcia-->
+        <!--I think there’s too much white space in the boxes. Increasing the text size slightly could help fill the space more effectively.-->
         <title>MPLS Dogboarding </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MPLS Dogboarding">
+        <meta name="keywords" content="lab3, assignment, MPLS, Dogboarding">
         <style>
             body{
                 font-family: 'Montserrat', sans-serif;
@@ -61,7 +68,15 @@
                 padding: 10px;
                 background-color: #ffffffcf;
                 border-radius: 10px;
+                transition: all .2s ease-in-out;
             }
+
+             aside:hover{
+                background-color: #ff4500bd;
+                height: 325px;
+                color: white;
+            }
+            
             #copyright{
                 width: 275px;
                 margin:auto;
@@ -77,6 +92,31 @@
                 height: 120px;
                 border-radius: 10px;
                 background-color: #000000dc;
+            }
+
+             @media screen and (max-width: 1024px) 
+            { 
+            aside {
+               height: auto;
+                  }}
+            #flexcontainer{
+                background-size: auto;
+            }
+
+            @media screen and (max-width: 768px) 
+            {
+              #flexcontainer{
+                background-image: url(img/dog_bg_768.jpg);
+                background-size: cover;
+            }
+            aside{
+                background-color: #000000cf;
+                background-position: center;
+                color: white;
+            }
+            #location_button{
+                display: block;
+            }
             }
         </style>
     </head>
